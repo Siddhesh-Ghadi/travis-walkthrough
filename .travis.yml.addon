@@ -1,0 +1,8 @@
+os: linux
+
+language: java
+
+addon:
+  apt: 
+    packages:
+      - maven
