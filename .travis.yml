@@ -1,9 +1,13 @@
-arch:
-  - amd64
-  - ppc64le
-dist: bionic
+arch: ppc64le
+
+services:
+  - docker
+
+before_install:
+  - docker pull alpine
+
 script:
-  - echo "Travis-Ci"
-  - arch
-  
+  - docker run -d alpine
+  - docker ps -a
+
   
