@@ -9,3 +9,6 @@ addon:
   apt: 
     packages:
       - maven
+      
+script:
+ - mvn --version
