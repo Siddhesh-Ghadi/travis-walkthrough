@@ -12,6 +12,8 @@ jobs:
     env: 
       - TARGET=ppc64le
       - BUILD=power
+    addon:
+      apt: maven
       
 script:
   - arch
