@@ -1,4 +1,4 @@
-os: linux
+dist: bionic
 
 env:
   global:
@@ -11,7 +11,9 @@ jobs:
   - arch: ppc64le
     env: 
       - TARGET=ppc64le
-      - TARGET=ppc64le
+      - BUILD=power
       
 script:
   - arch
+  - echo $CC
+  - echo $TARGET
