@@ -1,4 +1,3 @@
-language: ruby
 arch: ppc64le
 
 services:
