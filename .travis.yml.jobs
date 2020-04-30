@@ -1,0 +1,17 @@
+os: linux
+
+env:
+  global:
+    - CC=/usr/bin/gcc
+    - CXX=/usr/bin/g++
+
+jobs:
+  - arch: amd64
+    env: TARGET=amd64
+  - arch: ppc64le
+    env: 
+      - TARGET=ppc64le
+      - TARGET=ppc64le
+      
+script:
+  - arch
