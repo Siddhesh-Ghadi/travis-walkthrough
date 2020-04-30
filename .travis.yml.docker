@@ -1,4 +1,5 @@
 language: ruby
+arch: ppc64le
 
 services:
   - docker
@@ -7,4 +8,5 @@ before_install:
   - docker pull alpine
 
 script:
-  - docker run alpine
+  - docker run -d alpine
+  - docker ps -a
